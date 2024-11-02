@@ -21,8 +21,9 @@
       /* Header Styling */
       header {
         background-color: #fff;
-        padding: 15px 30px;
+        padding: 15px 20px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid #ddd;
@@ -41,7 +42,7 @@
       }
 
       .logo h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
         font-weight: bold;
         color: #ff6600;
       }
@@ -50,7 +51,7 @@
       .social-icons {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
       }
 
       .nav-links a {
@@ -68,13 +69,13 @@
       .social-icons a {
         display: flex;
         align-items: center;
-        text-decoration: none; /* Menambahkan ini untuk menghilangkan garis bawah pada teks */
-        color: #333; /* Mengatur warna teks agar sesuai dengan skema warna */
+        text-decoration: none;
+        color: #333;
       }
 
       .social-icons img {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         object-fit: contain;
         transition: transform 0.3s;
       }
@@ -84,23 +85,24 @@
       }
 
       .social-icons span {
-        margin-left: 5px; /* Memberikan sedikit jarak antara gambar dan teks */
-        font-size: 1em; /* Ukuran font teks */
-        transition: color 0.3s; /* Efek transisi saat hover */
+        margin-left: 5px;
+        font-size: 0.9em;
+        transition: color 0.3s;
       }
 
       .social-icons a:hover span {
-        color: #ff6600; /* Ubah warna teks saat hover */
+        color: #ff6600;
       }
 
       .pre-order-button {
         background-color: #ff6600;
         color: #fff;
-        padding: 10px 20px;
+        padding: 8px 16px;
         border-radius: 5px;
         text-decoration: none;
         font-weight: bold;
         transition: background-color 0.3s;
+        font-size: 0.9em;
       }
 
       .pre-order-button:hover {
@@ -110,32 +112,32 @@
       /* Main Content Styling */
       #home {
         text-align: center;
-        padding: 50px 20px;
+        padding: 40px 20px;
         background-color: #ffffff;
       }
 
       #home h2 {
-        font-size: 2em;
+        font-size: 1.8em;
         color: #333;
         margin-bottom: 10px;
       }
 
       #home p {
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: #666;
         margin-bottom: 20px;
       }
 
       #products {
         text-align: center;
-        padding: 40px 20px;
+        padding: 30px 20px;
         background-color: #f4f4f4;
       }
 
       #products h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
         color: #333;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
 
       .product-container {
@@ -148,8 +150,9 @@
       .product {
         background-color: white;
         border: 1px solid #ddd;
-        padding: 20px;
-        width: 300px;
+        padding: 15px;
+        width: 100%;
+        max-width: 250px;
         text-align: center;
         border-radius: 10px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -161,22 +164,23 @@
       }
 
       .product h3 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         color: #ff6600;
         margin-bottom: 10px;
       }
 
       .product-image {
-        width: 250px;
-        height: 250px;
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
         object-fit: cover;
         border-radius: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
 
       .product p {
         color: #666;
-        font-size: 1em;
+        font-size: 0.9em;
       }
 
       /* Footer */
@@ -190,6 +194,33 @@
       footer p {
         margin: 0;
         font-size: 0.9em;
+      }
+
+      /* Media Query for Mobile */
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .logo h1 {
+          font-size: 1.3em;
+        }
+
+        .nav-links {
+          justify-content: center;
+          margin-top: 10px;
+        }
+
+        .social-icons {
+          justify-content: center;
+          margin-top: 10px;
+        }
+
+        .product {
+          width: 100%;
+          max-width: 300px;
+        }
       }
     </style>
   </head>
@@ -270,7 +301,7 @@
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Roejak Lava (Java). Kelompok 5 & 6</p>
+      <p>&copy; 2024 Roejak Lava (Java). All Rights Reserved.</p>
     </footer>
   </body>
 </html>
